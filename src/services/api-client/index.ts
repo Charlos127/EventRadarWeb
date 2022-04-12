@@ -37,7 +37,7 @@ export const httpClient = async <T = any>({
       headers,
       params,
     });
-  } catch (error) {
+  } catch (error: any) {
     axiosResponse = error.response || { status: 500, data: null };
     toast.error(
       error?.response?.data?.message || 'Ops, tente novamente mais tarde.',

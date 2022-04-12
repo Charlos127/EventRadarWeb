@@ -23,7 +23,7 @@ const Route = ({
 
   // const Layout = user ? BlankLayout : DefaultLayout;
 
-  let redirectPath = isPrivate ? '/' : '/dashboard';
+  let redirectPath = isPrivate ? '/' : '/login';
 
   if (user && isPrivate) {
     redirectPath = '/forbidden';

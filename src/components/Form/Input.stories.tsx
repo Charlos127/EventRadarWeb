@@ -4,11 +4,11 @@ import { FaUser } from 'react-icons/fa';
 import { Icon } from '@chakra-ui/react';
 import { Story } from '@storybook/react';
 
-import { Input as HDNInput, InputProps as HDNInputProps } from './Input';
+import { Input as ChakraInput, InputProps as ChakraInputProps } from './Input';
 
 export default {
-  title: 'HDN Chakra/Form/Input',
-  component: HDNInput,
+  title: 'Chakra/Form/Input',
+  component: ChakraInput,
   argTypes: {
     name: { control: 'text' },
     label: { control: 'text' },
@@ -20,8 +20,8 @@ export default {
   },
 };
 
-const Template: Story<HDNInputProps> = args => {
-  return <HDNInput {...args} icon={<Icon as={FaUser} />} />;
+const Template: Story<ChakraInputProps> = args => {
+  return <ChakraInput {...args} icon={<Icon as={FaUser} />} />;
 };
 
 export const Input = Template.bind({});
