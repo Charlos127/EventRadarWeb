@@ -1,4 +1,4 @@
-const APP_NAME = '@AppName';
+const APP_NAME = '@EventRadar';
 
 const getItem = (item: string): any =>
   localStorage.getItem(`${APP_NAME}:${item}`);

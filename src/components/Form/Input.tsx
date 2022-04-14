@@ -21,7 +21,7 @@ import {
 export interface InputProps extends ChakraInputProps {
   name: string;
   label?: string;
-  icon: ReactElement;
+  icon?: ReactElement;
   error?: FieldError;
 }
 
@@ -52,7 +52,7 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
             borderColor="gray.300"
             borderWidth="2px"
             _placeholder={{
-              color: 'gray.300',
+              color: 'gray.500',
             }}
             _hover={{
               borderColor: 'gray.400',
@@ -76,7 +76,7 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
           borderColor="gray.300"
           borderWidth="2px"
           _placeholder={{
-            color: 'gray.300',
+            color: 'gray.500',
           }}
           _hover={{
             borderColor: 'gray.400',

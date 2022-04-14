@@ -11,7 +11,7 @@ export interface ButtonProps extends ChakraButtonProps {
 
 export function Button({ children, ...rest }: ButtonProps) {
   return (
-    <ChakraButton colorScheme={rest.disabled ? 'gray' : 'primary'} {...rest}>
+    <ChakraButton colorScheme={rest.disabled ? 'gray' : 'secondary'} {...rest}>
       {children}
     </ChakraButton>
   );
